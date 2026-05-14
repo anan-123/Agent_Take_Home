@@ -16,13 +16,12 @@ The commands also work with no flags and default to the paths above. Reviewers m
 I have run with no flags for testing.
 
 ## Stack and runtime
-Language: TypeScript
-Runtime: Node.js
-External LLM: Anthropic Claude (Haiku 4.5 used for extraction/classification as its faster than opus but opus is better quality responses)
-Tooling model: Deterministic orchestration layer with LLM-assisted extraction
-API usage: fetch calls to Anthropic Messages API
-No external frameworks (kept minimal for auditability and grading clarity)
-Runtime: 10000 - 15000ms for haiku and 20970ms for opus.
+1. Language: TypeScript
+2. Runtime: Node.js
+3. External LLM: Anthropic Claude (Haiku 4.5 used for extraction/classification as its faster than opus but opus is better quality responses)
+4. Tooling model: Deterministic orchestration layer with LLM-assisted extraction
+5. API usage: fetch calls to Anthropic Messages API
+6. Runtime: 10000 - 15000ms for haiku and 20970ms for opus.
 
 
 ## Architecture
