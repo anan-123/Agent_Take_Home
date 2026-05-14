@@ -45,7 +45,7 @@ A planner-based architecture was intentionally avoided because it introduces non
 2. For PHI and privacy concerns, the goal was to anonymize sensitive information before sending data to the LLM, including removing names, emails, and other identifiers. These would be replaced with placeholders such as <PATIENT> or structured IDs to ensure compliance and reduce data exposure risk. This was partially implemented, but not fully completed; as a result, the current version still relies on earlier code where full redaction and tokenization were not fully enforced.
 3. The system should be evaluated on larger and more diverse datasets to assess scalability, robustness, and consistency under load. This includes testing edge cases, high-volume inbox scenarios, and more complex multi-intent messages to ensure the routing logic and tool execution remain stable at scale.
 4. Additional next steps include improving observability and evaluation tooling (e.g., structured logs for tool sequences, failure tracing, and per-classification metrics), as well as introducing stronger guardrails for ambiguous cases where classification confidence is low, to ensure safer fallback behavior and more reliable human escalation.
-5. I would revise the agent architecture if given more time and spend more time system designing.
+5. I would revise the agent architecture if given more time and spend more time system designing and also thinking how to optimize the runtime.
 
 
 
