@@ -80,7 +80,7 @@ async function processItem(item: InboxItem): Promise<ItemOutput> {
       child_name: claudeAnalysis.child_name,
       dob_or_age: claudeAnalysis.dob_or_age,
       parent_contact: claudeAnalysis.parent_contact || item.sender,
-      discipline: claudeAnalysis.discipline,
+      discipline: claudeAnalysis.discipline as Discipline[] | null,
       diagnosis_or_concern: claudeAnalysis.diagnosis_or_concern,
       payer: claudeAnalysis.payer,
       member_id: claudeAnalysis.member_id,
